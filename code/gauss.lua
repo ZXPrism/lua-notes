@@ -24,7 +24,7 @@ for i = -N, N do
     freq = (cnt[i] or 0) / maxCnt
     len = math.ceil(freq * 10)
     io.write(string.format("%03d: ", i))
-    for j = 0, len do
+    for _ = 0, len do
         io.write('#')
     end
     io.write('\n')
