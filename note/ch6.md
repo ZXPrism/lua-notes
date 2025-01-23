@@ -86,8 +86,6 @@ Lua 函数支持返回多个值
         return table.unpack(lst)
     end
 
-    v1(1, 2, nil, 3)
-    v2(1, 2, nil, 3)
     print(PlusOne(1, 2, 3))
     print(PlusOne(table.unpack({ 4, 5, 6 })))
     ```

@@ -33,6 +33,16 @@
 - 在交互模式下，所有输入的代码在按下回车后都会被立即执行
 - 可以通过 `os.exit()` 退出交互模式，或者使用 `CTRL+Z`（Windows）或 `CTRL+D`（Linux）
 
+> Windows 下：
+> - `CTRL+C`：向当前进程发送 `SIGINT`，中断当前进程
+> - `CTRL+Z`：向当前进程发送 `EOF`，代表输入结束
+> - `CTRL+D`：无特殊用途
+
+> Linux 下：
+> - `CTRL+C`：向当前进程发送 `SIGINT`
+> - `CTRL+Z`：向当前进程发送 `SIGTSTP`，暂停当前进程，可使用 `SIGCONT` 恢复
+> - `CTRL+D`：向当前进程发送 `EOF`，代表输入结束
+
 
 ## 执行 Lua 代码文件
 - 输入 `lua <代码文件路径>` 以执行预先写好的 Lua 代码文件
